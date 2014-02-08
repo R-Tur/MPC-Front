@@ -4,4 +4,4 @@ Before using, you must have installed and configured mpc command-line utility.
 
 Do not forget to change a password in the config.php (see $CONFIG["user"] and $CONFIG["pass"]).
 
-NOTE: it's just a prototype.
+NOTE: it's just a prototype (I want to control my radio from the sofa using a tablet=)))
