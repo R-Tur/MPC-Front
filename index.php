@@ -25,19 +25,19 @@ if(!file_exists($CONFIG["music_link_name"])){
 <a style="color:green; background:yellow" href="javascript:void" onclick="mpc('shuffle')">SHUFFLE</a> 
 <p style="margin-top:3px;padding-top:10px" id="mpc_status"></p>
 </div>
-<audio id="audio" controls></audio> <font style="position:absolute;top:0px;margin-left:10px;font-size:small">MPC Front, v.0.0.1</font>
+<audio id="audio" controls></audio> <a target="_blank" style="position:absolute;top:0px;margin-left:50px;font-size:small" href="https://github.com/R-Tur/MPC-Front">MPC Front, v.0.0.1</a>
 <a style="position:absolute;left:0px;top:45px;margin-left:10px;" href="javascript:void"  onclick="mpc('add',APP.track_played.path)"><font style="font-size:small" id="now_played_track"></font></a>
 </div>
 
-
-<table style="padding-top:60px">
-<tr>
-<td valign=top width=75%>
-<iframe id="browserframe" width="85%" height="1280px" src="browser.php"></iframe></td>
-<td valign="top">
-
-<div id="mpc_playlist" style="overflow-y: visible; width: 480px; margin: 0 auto; text-align: left">status</div></td>
+<div style="padding-top:60px">
+<table>
+<tr valign="top">
+<td>
+<iframe id="browserframe" width="650px" height="1280px" src="browser.php"></iframe></td>
+<td align="left">
+<div id="mpc_playlist" style="overflow-y: visible;  margin: 0 auto;"></div></td>
 </tr>
 </table>
+</div>
 </body>
 </html>
