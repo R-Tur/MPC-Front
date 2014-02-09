@@ -41,7 +41,7 @@ if ($handle = opendir(url_concat($CONFIG["music_link_name"],$dir))) {
 			}
 			?>
 			<?php if($add_flag){?>
-			<a style="color:white;background:green" href="javascript:void" onclick="parent.mpc('add','<?=addslashes("/".url_concat($dir,$entry))?>')"><b> | + |</b></a></p>
+			<a style="color:white;background:green" href="javascript:void" onclick="parent.mpc('add','<?=addslashes(url_concat($dir,$entry))?>')"><b> | + |</b></a></p>
 			<?php }?>
 			<?php
         }

@@ -16,7 +16,7 @@ function playTrack(path,  el) {
 	var oAudio = document.getElementById('audio');
 	oAudio.src = path;
 	oAudio.play();
-}
+};
 function mpc(command, val, confirm_) {
 	var value = "";
 	if (val)
@@ -24,8 +24,8 @@ function mpc(command, val, confirm_) {
 	if (confirm_)
 		if (!confirm('Are you sure?'))
 			return false;
-		var strquery = "mpc.php?c=" + command + "&v=" + value;
-		console.log(strquery);
+		var strquery = "mpc.php?c=" + command + "&v=" + encodeURIComponent(value);
+		//console.log(strquery);
 	$.getJSON(strquery, function (data) {
 		if (data.status) {
 			$("#mpc_status").html("");
@@ -53,7 +53,7 @@ function mpc(command, val, confirm_) {
 		if ($.trim(data.playlist).length > 0)
 			$("#mpc_playlist").html(data.playlist);
 	});
-}
+};
 $(function () {
 	mpc("status", "");
 });
