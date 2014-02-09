@@ -7,6 +7,7 @@ function playTrack(path, el) {
 		if (s[0] != '/')
 			s.shift();
 		else {
+		    s.shift();
 			break;
 		}
 	}
