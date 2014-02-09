@@ -27,7 +27,7 @@ if(!file_exists($CONFIG["music_link_name"])){
 </div>
 <audio id="audio" controls></audio> 
 <a style="position:absolute;left:0px;top:0px;margin-left:10px;" href="javascript:void"  onclick="mpc('add',APP.track_played.path)"><font style="font-size:small" id="now_played_track"></font></a>
-<a target="_blank" style="font-size:small" href="https://github.com/R-Tur/MPC-Front">MPC Front, v.0.0.1</a>
+<a target="_blank" style="font-size:small" href="https://github.com/R-Tur/MPC-Front">MPC-Front, v.0.0.1</a>
 </div>
 
 <div style="padding-top:100px">
