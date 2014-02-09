@@ -8,4 +8,3 @@ NOTE: it's just a prototype (I want to control my radio from the sofa using a ta
 
 <img src="http://jsound.org/img/MPC-Front.png">
 
-
