@@ -17,7 +17,7 @@ if(!file_exists($CONFIG["music_link_name"])){
 <div style="font-size:x-large;position:fixed;padding-top:30px;top:0px; height:75px;width:100%;background:white">
 <div style="z-index:10;text-align:right;padding-right:20px;float:right">
 <a style="color:white; background:red" href="javascript:void(0)" onclick="mpc('stop', '',true)">| STOP |</a> 
-<a style="color:white;background:green" href="javascript:void(0)">| PLAY |</a>
+<a style="color:white;background:green" href="javascript:void(0)" onclick="mpc('play')">| PLAY |</a>
 <a style="color:white; background:blue" href="javascript:void(0)" onclick="mpc('prev')">| PREV |</a>
 <a style="color:white; background:blue"  href="javascript:void(0)" onclick="mpc('next')">| NEXT |</a>
 <a style="color:white; background:red" href="javascript:void(0)" onclick="mpc('crop', '',true)">CROP</a> 
