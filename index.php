@@ -14,8 +14,8 @@ if(!file_exists($CONFIG["music_link_name"])){
 <script src="js/app.js"></script>
 </head>
 <body>
-<div style="font-size:x-large;z-index:10;position:fixed; top:0px; height:70px;width:100%;background:white">
-<div style="text-align:right;padding-right:12px;float:right">
+<div style="font-size:x-large;position:fixed;padding-top:30px;top:0px; height:75px;width:100%;background:white">
+<div style="z-index:10;text-align:right;padding-right:20px;float:right">
 <a style="color:white; background:red" href="javascript:void" onclick="mpc('stop', '',true)">| STOP |</a> 
 <a style="color:white;background:green" href="javascript:void" onclick="mpc('play')">| PLAY |</a>
 <a style="color:white; background:blue" href="javascript:void" onclick="mpc('prev')">| PREV |</a>
@@ -25,11 +25,12 @@ if(!file_exists($CONFIG["music_link_name"])){
 <a style="color:green; background:yellow" href="javascript:void" onclick="mpc('shuffle')">SHUFFLE</a> 
 <p style="margin-top:3px;padding-top:10px" id="mpc_status"></p>
 </div>
-<audio id="audio" controls></audio> <a target="_blank" style="position:absolute;top:0px;margin-left:50px;font-size:small" href="https://github.com/R-Tur/MPC-Front">MPC Front, v.0.0.1</a>
-<a style="position:absolute;left:0px;top:45px;margin-left:10px;" href="javascript:void"  onclick="mpc('add',APP.track_played.path)"><font style="font-size:small" id="now_played_track"></font></a>
+<audio id="audio" controls></audio> 
+<a style="position:absolute;left:0px;top:0px;margin-left:10px;" href="javascript:void"  onclick="mpc('add',APP.track_played.path)"><font style="font-size:small" id="now_played_track"></font></a>
+<a target="_blank" style="font-size:small" href="https://github.com/R-Tur/MPC-Front">MPC Front, v.0.0.1</a>
 </div>
 
-<div style="padding-top:60px">
+<div style="padding-top:100px">
 <table>
 <tr valign="top">
 <td>
