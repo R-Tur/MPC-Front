@@ -40,7 +40,7 @@ function mpc(command, val, confirm_) {
 				a.innerHTML = "| " + title.toUpperCase() + " |";
 				$(a).css("color", "white");
 				$(a).data("command", title);
-				a.setAttribute('href', 'javascript:void');
+				a.setAttribute('href', 'javascript:void(0)');
 				if (data.status[i + 1] == "on")
 					$(a).css("background", "green");
 				else
