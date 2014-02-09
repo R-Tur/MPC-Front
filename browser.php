@@ -36,12 +36,12 @@ if ($handle = opendir(url_concat($CONFIG["music_link_name"],$dir))) {
 			if(in_array(pathinfo($entry, PATHINFO_EXTENSION),$CONFIG["media_files"])){
 			  $add_flag = true;
 			  ?>
-			   <p><a class="diritem" href="javascript:void" onclick="parent.playTrack('<?=addslashes(url_concat($CONFIG["music_link_name"],$dir,$entry));?>', this);"><img style="vertical-align:bottom" src="img/music.png" height="25px"> <?=$entry?></a>
+			   <p><a class="diritem" href="javascript:void(0)" onclick="parent.playTrack('<?=addslashes(url_concat($CONFIG["music_link_name"],$dir,$entry));?>', this);"><img style="vertical-align:bottom" src="img/music.png" height="25px"> <?=$entry?></a>
 			  <?php
 			}
 			?>
 			<?php if($add_flag){?>
-			<a style="color:white;background:green" href="javascript:void" onclick="parent.mpc('add','<?=addslashes(url_concat($dir,$entry))?>')"><b> | + |</b></a></p>
+			<a style="color:white;background:green" href="javascript:void(0)" onclick="parent.mpc('add','<?=addslashes(url_concat($dir,$entry))?>')"><b> | + |</b></a></p>
 			<?php }?>
 			<?php
         }

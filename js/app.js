@@ -1,15 +1,17 @@
 APP = {};
 APP.track_played = {};
 APP.track_played.path = "";
-
-function playTrack(path,  el) {
-    var s = path.split("");
-	for(var i=0;i<s.length;i++){
-	  if(s[0] != '/') s.shift();
-	  else {break;}
+function playTrack(path, el) {
+	var s = path.split("");
+	for (var i = 0; i < s.length; i++) {
+		if (s[0] != '/')
+			s.shift();
+		else {
+			break;
+		}
 	}
 	s = s.join("");
-    $("#now_played_track").html(s);
+	$("#now_played_track").html(s);
 	APP.track_played.path = s;
 	$("#browserframe").contents().find(".diritem").css("background", "transparent");
 	$(el).css("background", "grey");
@@ -24,8 +26,7 @@ function mpc(command, val, confirm_) {
 	if (confirm_)
 		if (!confirm('Are you sure?'))
 			return false;
-		var strquery = "mpc.php?c=" + command + "&v=" + encodeURIComponent(value);
-		//console.log(strquery);
+	var strquery = "mpc.php?c=" + command + "&v=" + encodeURIComponent(value);
 	$.getJSON(strquery, function (data) {
 		if (data.status) {
 			$("#mpc_status").html("");
