@@ -1,11 +1,11 @@
 <?php
 if(!$CONFIG = include("config.php")) exit;
 require("auth.php");
-switch($_REQUEST["c"]){
+switch($_GET["c"]){
   case 'crop':case 'random':case 'consume':case 'single':
   case 'next':case 'prev':case 'update':case 'shuffle':case 'play': case 'stop':
-  case 'repeat': exec("mpc {$_REQUEST["c"]} {$_REQUEST["v"]}"); break;
-  case 'add': exec("mpc add \"{$_REQUEST["v"]}\""); break;
+  case 'repeat': exec("mpc {$_GET["c"]} {$_GET["v"]}"); break;
+  case 'add': exec("mpc add \"{$_GET["v"]}\""); break;
   default: break;
 }
 exec("mpc status",$status);

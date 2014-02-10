@@ -11,7 +11,7 @@ if(!file_exists($CONFIG["music_link_name"])){
 <html>
 <head>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script src="js/app.js"></script>
+<script src="js/app.js.php"></script>
 </head>
 <body>
 <div style="font-size:x-large;position:fixed;padding-top:30px;top:0px; height:75px;width:100%;background:white">
@@ -26,7 +26,7 @@ if(!file_exists($CONFIG["music_link_name"])){
 <p style="margin-top:3px;padding-top:10px" id="mpc_status"></p>
 </div>
 <audio id="audio" controls></audio> 
-<a style="position:absolute;left:0px;top:0px;margin-left:10px;" href="javascript:void(0)"  onclick="mpc('add',APP.track_played.path)"><font style="font-size:small" id="now_played_track"></font></a>
+<font style="position:absolute;left:0px;top:0px;font-size:small;cursor:pointer" id="now_played_track" onclick="mpc('add',$(this).html());"></font>
 <a target="_blank" style="font-size:small" href="https://github.com/R-Tur/MPC-Front">MPC-Front, v.0.0.1</a>
 </div>
 

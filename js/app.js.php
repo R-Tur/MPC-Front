@@ -1,6 +1,7 @@
-APP = {};
-APP.track_played = {};
-APP.track_played.path = "";
+<?php if(!$CONFIG = include("../config.php")) exit;?>
+
+<?php require("../auth.php"); ?>
+
 function playTrack(path, el) {
 	var s = path.split("");
 	for (var i = 0; i < s.length; i++) {
@@ -13,7 +14,6 @@ function playTrack(path, el) {
 	}
 	s = s.join("");
 	$("#now_played_track").html(s);
-	APP.track_played.path = s;
 	$("#browserframe").contents().find(".diritem").css("background", "transparent");
 	$(el).css("background", "grey");
 	var oAudio = document.getElementById('audio');
