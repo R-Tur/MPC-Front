@@ -1,7 +1,3 @@
-<?php if(!$CONFIG = include("../config.php")) exit;?>
-
-<?php require("../auth.php"); ?>
-
 function playTrack(path, el) {
 	var s = path.split("");
 	for (var i = 0; i < s.length; i++) {

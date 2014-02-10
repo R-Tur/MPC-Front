@@ -11,7 +11,7 @@ if(!file_exists($CONFIG["music_link_name"])){
 <html>
 <head>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script src="js/app.js.php"></script>
+<script src="js/app.js"></script>
 </head>
 <body>
 <div style="font-size:x-large;position:fixed;padding-top:30px;top:0px; height:75px;width:100%;background:white">
