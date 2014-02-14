@@ -2,12 +2,12 @@
 if(!$CONFIG = include("config.php")) exit;
 require("auth.php");
 $c = addslashes($_GET["c"]);
-$v = addslashes($_GET["v"]);
+$v = $_GET["v"];
 switch($c){
   case 'crop':case 'random':case 'consume':case 'single':
   case 'next':case 'prev':case 'update':case 'shuffle':case 'play': case 'stop':
-  case 'repeat': exec("mpc '$c'"); break;
-  case 'add': exec("mpc add '$v'"); break;
+  case 'repeat': exec("mpc \"$c\""); break;
+  case 'add': exec("mpc add \"$v\""); break;
   default: break;
 }
 exec("mpc status",$status);
