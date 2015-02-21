@@ -20,7 +20,10 @@ function url_concat(){
    return norm_dir($str);
 }
 
-$dir = $_REQUEST["dir"];
+$dir = "";
+if(isset($_REQUEST["dir"])){
+ $dir = $_REQUEST["dir"];
+}
 
 if ($handle = opendir(url_concat($CONFIG["music_link_name"],$dir))) {
     while (false !== ($entry = readdir($handle))) {
