@@ -1,5 +1,5 @@
 <?
-	$CONFIG["user"] = ""; //change this!
+	$CONFIG["user"] = "admin"; //change this!
 	 
 	$CONFIG["pass"] = ""; //change this!
 	

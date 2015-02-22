@@ -6,4 +6,6 @@ Do not forget to change a password in the <b>config.php</b> (see <b>$CONFIG["use
 
 NOTE: it's just a prototype (I want to control my radio from the sofa using a tablet=)))
 
+Default credentials: user: <b>admin</b>, no password
+
 <img src="http://jsound.org/img/MPC_Front.png">
