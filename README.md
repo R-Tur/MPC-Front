@@ -10,6 +10,7 @@ apt-get install mpd
 apt-get install mpc
 ```
 
-Do not forget to change a password in the <b>config.php</b> (see <b>$CONFIG["user"]</b> and <b>$CONFIG["pass"])</b>.
+Do not forget to change a password in the <b>config.php</b>
+(see <b>$CONFIG["user"]</b> and <b>$CONFIG["pass"])</b>.
 
 <img src="http://jsound.org/img/MPC_Front.png">
