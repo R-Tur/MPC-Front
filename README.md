@@ -2,8 +2,8 @@ Web GUI for the <b>Media Player Classic</b> (<b>MPC</b>, command-line utility), 
 
 Before using, you must have installed and configured <b>mpc</b> command-line utility:
 
-apt-get update
-apt-get install mpd mpc
+<b>apt-get update
+apt-get install mpd mpc</b>
 
 Do not forget to change a password in the <b>config.php</b> (see <b>$CONFIG["user"]</b> and <b>$CONFIG["pass"])</b>.
 
