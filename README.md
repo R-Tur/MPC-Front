@@ -3,7 +3,7 @@ Web GUI for the <b>Media Player Classic</b> (<b>MPC</b>, command-line utility), 
 Before using, you must have installed and configured <b>mpc</b> command-line utility:
 
 ```sh
-$ apt-get update
+apt-get update
 apt-get install mpd mpc
 ```
 
