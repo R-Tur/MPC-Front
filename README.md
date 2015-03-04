@@ -1,4 +1,6 @@
-Web GUI for the <b>Media Player Classic</b> (<b>MPC</b>, command-line utility), can be used with <b>Icecast2</b> and <b>Music Player Daemon (MPD)</b> for easy radio stream management (changing tracks, etc).
+Web GUI for <b>Media Player Classic</b> (<b>MPC</b>)
+
+can be used with <b>Icecast2</b> and <b>Music Player Daemon (MPD)</b> for easy radio stream management (changing tracks, etc).
 
 Before using, you must have installed and configured <b>mpc</b> command-line utility:
 
